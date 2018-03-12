@@ -1,64 +1,131 @@
+
 <!doctype html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-{% seo %}
+    <title>Cover Template for Bootstrap</title>
 
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <meta name="viewport" content="width=device-width">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
   </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <a href="{{ site.github.url }}"> <h1>{{ site.title | default: site.github.repository_name }}</h1> </a>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        {% if site.github.is_project_page %}
-          <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p>
-        {% endif %}
+  <body class="text-center">
 
-        {% if site.github.is_user_page %}
-          <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
-
-        {% if site.show_downloads %}
-          <ul>
-            <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-            <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-            <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-          </ul>
-        {% endif %}
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">ArcGIS API for JavaScript</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <p>7th - 9th March 2018</p>
+            <!-- <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a> -->
+          </nav>
+        </div>
       </header>
-      <section>
 
-      {{ content }}
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading">Developing Web Apps with ArcGIS API for Javascript</h1>
+        <br />
+        <!-- <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p> -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">URL</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Getting started with the API</td>
+              <td><a href="./GettingStarted/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2a</th>
+              <td>Add data to your map using layers</td>
+              <td><a href="./WorkWithMapLayers/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2b</th>
+              <td>Add widgets</td>
+              <td><a href="./Widgets/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">2c</th>
+              <td>Add data to your map using web maps</td>
+              <td><a href="./WorkWithWebMaps/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Geocode and find directions</td>
+              <td><a href="./SearchWidget/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4a</th>
+              <td>Add a drawing tool</td>
+              <td><a href="./QueryData/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">4b</th>
+              <td>Query data</td>
+              <td><a href="./SelectFeatures/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">5a</th>
+              <td>Visualizing data using a renderer</td>
+              <td><a href="./VisualizeData/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">5b</th>
+              <td>Visualize attribute information using pop-up windows</td>
+              <td><a href="./CreatePopup/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">6a</th>
+              <td>Implement a geoprocessing task</td>
+              <td><a href="./ViewshedAnalysis/">View</a></td>
+            </tr>
+            <!-- <tr>
+              <th scope="row">6b</th>
+              <td>Implement an analysis widget</td>
+              <td></td>
+            </tr> -->
+            <tr>
+              <th scope="row">7</th>
+              <td>Add editing functionality</td>
+              <td><a href="./EditFeatures/">View</a></td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Develop an ArcGIS web application</td>
+              <td><a href="./CreatePppup/">View</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
 
-      </section>
-      <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+        </div>
       </footer>
     </div>
-    <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
 
-  {% if site.google_analytics %}
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-    </script>
-  {% endif %}
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
