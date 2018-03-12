@@ -48,7 +48,7 @@ require([
              * Step: Add the USA map service to the map
              */
 
-            var lyrUSA = new ArcGISDynamicMapServiceLayer("http://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer", {
+            var lyrUSA = new ArcGISDynamicMapServiceLayer("https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer", {
                 opacity : 0.5
             });
             mapMain.addLayer(lyrUSA);

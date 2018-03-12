@@ -60,8 +60,8 @@ require([
             }, "divGrid");
 
             // URL variables
-            var sUrlUSAService = "http://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer";
-            var sUrlQuakesLayer = "http://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Earthquakes/FeatureServer/0";
+            var sUrlUSAService = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer";
+            var sUrlQuakesLayer = "https://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Earthquakes/FeatureServer/0";
 
             // Create the map
             var mapMain = new Map("divMap", {

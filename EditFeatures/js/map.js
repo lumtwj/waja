@@ -41,15 +41,15 @@ require([
             /*
              * Step: Construct the editable layers
              */
-            flFirePoints = new FeatureLayer("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/0", {
+            flFirePoints = new FeatureLayer("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/0", {
                 outFields: ['*']
             });
 
-            flFireLines = new FeatureLayer("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/1", {
+            flFireLines = new FeatureLayer("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/1", {
                 outFields: ['*']
             });
 
-            flFirePolygons = new FeatureLayer("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/2", {
+            flFirePolygons = new FeatureLayer("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Wildfire/FeatureServer/2", {
                 outFields: ['*']
             });
 
@@ -90,7 +90,7 @@ require([
                  */
                 var editorSettings = {
                     map: mapMain,
-                    geometryService: new GeometryService("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer"),
+                    geometryService: new GeometryService("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer"),
                     layerInfos: layerInfosWildfire,
                     toolbarVisible: true,
                     templatePicker: tpCustom,

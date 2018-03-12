@@ -37,7 +37,7 @@ require([
             /*
              * Step: Construct the Geoprocessor
              */
-            var gpViewshed = new Geoprocessor("http://sampleserver6.arcgisonline.com/arcgis/rest/services/Elevation/ESRI_Elevation_World/GPServer/Viewshed");
+            var gpViewshed = new Geoprocessor("https://sampleserver6.arcgisonline.com/arcgis/rest/services/Elevation/ESRI_Elevation_World/GPServer/Viewshed");
 
             mapMain.on("load", function () {
                 /*

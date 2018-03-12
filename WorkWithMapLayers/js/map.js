@@ -50,7 +50,7 @@ require([
             /*
              * Step: Add the USA map service to the map
              */
-            var lyrUSA = new ArcGISDynamicMapServiceLayer("http://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer", {
+            var lyrUSA = new ArcGISDynamicMapServiceLayer("https://sampleserver6.arcgisonline.com/arcgis/rest/services/USA/MapServer", {
                 opacity : 0.5
             });
             // mapMain.addLayer(lyrUSA);
@@ -58,7 +58,7 @@ require([
             /*
              * Step: Add the earthquakes layer to the map
              */
-            var lyrQuakes = new FeatureLayer("http://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Earthquakes/FeatureServer/0");
+            var lyrQuakes = new FeatureLayer("https://services.arcgis.com/ue9rwulIoeLEI9bj/arcgis/rest/services/Earthquakes/FeatureServer/0");
             lyrQuakes.setDefinitionExpression("MAGNITUDE >= 2.0");
             // mapMain.addLayer(lyrQuakes);
 

@@ -73,7 +73,7 @@ require([
              */
             var dijitDirections = new Directions({
                 map: mapMain,
-                routeTaskUrl: "http://utility.arcgis.com/usrsvcs/appservices/OM1GNiiACNJceMRn/rest/services/World/Route/NAServer/Route_World"
+                routeTaskUrl: "https://utility.arcgis.com/usrsvcs/appservices/OM1GNiiACNJceMRn/rest/services/World/Route/NAServer/Route_World"
             }, "divDirections");
             dijitDirections.startup()
 
@@ -82,7 +82,7 @@ require([
              */
             var widgetPrint = new Print({
                 map: mapMain,
-                url: "http://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
+                url: "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task",
                 templates: myTemplates
             }, "divPrint");
             widgetPrint.startup();

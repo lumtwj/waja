@@ -44,7 +44,7 @@ require([
             /*
              * Step: Construct and bind the Locator task
              */
-            taskLocator = new Locator("http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer");
+            taskLocator = new Locator("https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer");
 
             /*
              * Step: Wire the button's onclick event handler
